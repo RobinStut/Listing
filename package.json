@@ -1,11 +1,11 @@
 {
-  "name": "plain-server",
+  "name": "Listing-server",
   "version": "1.0.0",
-  "description": "This package wil hold a plain server serving static html files",
+  "description": "This package wil hold a basic server serving static html files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Robin Stut _ with the help of Sterre van Geest, Martijn Reeuwijk",
   "license": "ISC"
 }
