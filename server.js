@@ -49,12 +49,16 @@ if (request.url =='/index'){
 if ((request.url =='/images')&&(!fs.existsSync("./images/index.html"))){
   response.writeHead(200,{'Content-Type': 'text/html'})
   console.log("/images && !");
+  // uitleg gevonden over readFile op : https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback
   fs.readFile("./images", (err, data) => {
   if (err) throw err;
   console.log(data);
   //Waarom kan ik die data niet laten zien in mn html?
   // ik zie dit alleen als console.log in mn BASH
   // response.end(data);
+  //   response.end("<p> fs.readFile("./images", (err, data) => {
+  // if (err) throw err;
+  // console.log(data); </p>")
 });
 }
 //404
